@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chanakya Neeti Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Almendra&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .background img {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .maincontainer #chanakya2 {
+            height: 700px;
+            width: 500px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #chanakya1 {
+            position: absolute;
+            top: 40%;
+            left: 15%;
+            height: 450px;
+            width: 550px;
+        }
+
+        h2 {
+            position: absolute;
+            top: 37%;
+            left: 43%;
+            color: rgb(136, 83, 17);
+            font-size: 2rem;
+            font-family: 'Almendra', serif;
+        }
+
+
+        .btn {
+            border-radius: 25px;
+            font-size: 1.2rem;
+            border: 2px solid black;
+            background: transparent;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            left: 46.5%;
+            overflow: hidden;
+            font-family: 'Almendra', serif;
+            z-index: 2;
+            height: 50px;
+            width: 150px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        span {
+            background: #ffcf77;
+            height: 100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+
+        button:hover span {
+            width: 100%;
+        }
+
+        button:hover {
+            border: 2px solid black;
+        }
+
+        @media (min-width:200px) and (max-width:500px) {
+            body{
+                overflow: hidden;
+            }
+            #chanakya1 {
+                position: absolute;
+                top: 15%;
+                left: 20%;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                width: 300px;
+            }
+
+            h2 {
+                position: absolute;
+                top: 55%;
+                left: 15%;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn{
+                position: absolute;
+                top: 65%;
+                left: 30%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width:500px) and (max-width:800px) {
+            body{
+                overflow: hidden;
+            }
+            #chanakya1 {
+                position: absolute;
+                top: 15%;
+                left: 30%;
+                justify-content: center;
+                align-items: center;
+                height: 300px;
+                width: 300px;
+            }
+
+            h2 {
+                position: absolute;
+                top: 55%;
+                left: 30%;
+                justify-content: center;
+                align-items: center;
+            }
+            .btn{
+                position: absolute;
+                top: 65%;
+                left: 38%;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width:800px) and (max-width:1600px) {
+            #chanakya1{
+                position: absolute;
+                left: 0%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="background">
+        <img src="https://i.pinimg.com/originals/07/ac/45/07ac456a6de666b123b7d41e064bf3e4.jpg" alt="">
+    </div>
+    <div class="maincontainer">
+        <img id="chanakya1" src="./chanakya.png" alt="">
+        <h2>|| CHANAKYA NEETI ||</h2>
+        <a href="CNpage1.html"><button class="btn"> <span class="span"></span>|| AARAMBH ||</button></a>
+    </div>
+</body>
+
+</html>
